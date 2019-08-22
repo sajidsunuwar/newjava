@@ -1,0 +1,32 @@
+<!DOCTPYE html>
+<html lang="en">
+    <head>
+        <title>Index</title>
+        <meta charset="utf-8" />
+        <meta name="author" content="Dharma" />
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+      <body>
+        <div id="browser"></div>
+      </body>
+
+      <script language="Javascript">
+        appname=navigator.appName;
+        appversion=navigator.appVersion;
+        appcode=navigator.appCodeName;
+        useragent=navigator.userAgent;
+        platform=navigator.platform;
+        online=navigator.onLine;
+        javaa=navigator.javaEnabled;
+
+        document.getElementById('browser').innerHTML="AppName=" +appname+ "<br/>" +
+        "AppVerson=" +appversion+ "<br/>" +
+        "AppCode=" +appcode+ "<br/>" +
+        "UserAgent=" +useragent+ "<br/>" +
+        "Platform=" +platform+ "<br/>" +
+        "Online=" +online+ "<br/>" +
+        "Javascript=" +javaa+ "<br/>" ;
+      </script>
+
+
+     </html>

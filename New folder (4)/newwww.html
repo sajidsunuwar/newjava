@@ -1,0 +1,23 @@
+<!DOCTPYE html>
+<html lang="en">
+    <head>
+        <title>Index</title>
+        <meta charset="utf-8" />
+        <meta name="author" content="Dharma" />
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+      <script language="Javascript">
+      	//nameformat=/^[a-zA-z0-9]*$/
+      	nameformat=/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/
+      	//at least one digit, at least one lower case, at least one upper case, min 8 chars
+      	name="Ram12345";
+      	if(name.match(nameformat))
+      	{
+      		alert("match");
+      	}
+      	else
+      	{
+      		alert("false");
+      	}
+      	</script>
+     </html>

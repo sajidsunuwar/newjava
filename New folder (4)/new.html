@@ -1,0 +1,35 @@
+<!DOCTPYE html>
+<html lang="en">
+    <head>
+        <title>Index</title>
+        <meta charset="utf-8" />
+        <meta name="author" content="Dharma" />
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+      <script language="Javascript">
+            window.onload=choosePic;
+            var theAd=0;
+            var myPix=["1.jpg","2.jpg","Jellyfish.jpg","Penguins.jpg","Desert.jpg","Lighthouse.jpg"];
+            length=myPix.length;
+
+            function choosePic()
+            {
+                var randomNum=Math.floor(Math.random() * length);
+                document.getElementById("myPicture").src=myPix[randomNum];
+            }
+
+            function rotate()
+            {
+                theAd++;
+                if (theAd==myPix.length)
+                {
+                    theAd=0;
+                }
+            document.getElementById("myPicture").src=myPix[theAd];
+            setTimeout(rotate, 1000);
+            }
+      </script>
+    <body>
+        <img src="1.jpg" width="600" height="600" id="myPicture" alt="somepic"/>
+    </body>
+</html>

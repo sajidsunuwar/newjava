@@ -1,0 +1,21 @@
+.row{
+	min-height: 15px;
+}
+
+.opac:hover
+{
+	opacity: 0.5;
+	transition: opacity 0.5s;
+}
+
+#don{
+	font-size: 25px;
+	font-family: sans-serif;
+	color: red;
+	display: none;
+	position: relative;
+	top: -170px;
+	left: 125px;
+	transition: color 0.5s;
+}
+

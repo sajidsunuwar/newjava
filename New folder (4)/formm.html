@@ -1,0 +1,56 @@
+<!DOCTPYE html>
+<html lang="en">
+    <head>
+        <title>Index</title>
+        <meta charset="utf-8" />
+        <meta name="author" content="Dharma" />
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+      <script type="text/javascript">
+            function rollover(my_image)
+            {
+                my_image.src="1.jpg";
+            }
+
+            function mouseaway(my_image)
+            {
+                my_image.src="2.jpg";
+            }
+        </script>
+    <body>
+    <nav style="background-color: grey; padding: 30px 30px"> HOME AWAY</nav>
+    <div id="error"></div>
+        <form method="GET" action="#" name="login" enctype="multipart/form-data" onsubmit="return validateForm()">
+                <fieldset>
+                    <legend>Login</legend>
+                    <input type="text" name="uname" placeholder="Username" />
+                    <br/>
+                    <input type="password" name="upass" placeholder="password" />
+                    <br/>
+                    <input type="submit" value="Login" name="submit" />
+                </fieldset>
+        </form>
+        <script src="validation.js"></script>
+
+
+
+        <div >  
+            <img class="opac" onmouseover="rollover()" onmouseout="mouseaway()" src="Jellyfish.jpg" width="25%" height="300"/>
+            
+            
+        </div>
+        <div id='don'>Sajid is don</div>
+        <script type="text/javascript">
+            function rollover()
+            {
+                document.getElementById("don").style.display= "block";
+            }
+            function mouseaway()
+            {
+                document.getElementById("don").style.display="none";
+            }
+            
+           
+        </script>
+    </body>
+    </html>
